@@ -2,7 +2,7 @@ package handler
 
 import (
 	"github.com/labstack/echo/v4"
-	"github.com/r4lly99/echo-snack/router/middleware"
+	"github.com/r4lly99/echo-snack/middleware"
 	"github.com/r4lly99/echo-snack/utils"
 )
 

@@ -1,12 +1,14 @@
 package handler
 
-import "github.com/r4lly99/echo-snack/user"
+import (
+	"github.com/r4lly99/echo-snack/service"
+)
 
 type Handler struct {
-	userService user.Service
+	userService service.Service
 }
 
-func NewHandler(us user.Service) *Handler {
+func NewHandler(us service.Service) *Handler {
 	return &Handler{
 		userService: us,
 	}
