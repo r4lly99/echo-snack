@@ -2,7 +2,7 @@ package handler
 
 import (
 	"github.com/r4lly99/echo-snack/model"
-	"github.com/r4lly99/echo-snack/user"
+	"github.com/r4lly99/echo-snack/service"
 	"github.com/r4lly99/echo-snack/utils"
 )
 
@@ -35,7 +35,7 @@ type profileResponse struct {
 	} `json:"profile"`
 }
 
-func newProfileResponse(us user.Service, userID uint, u *model.User) *profileResponse {
+func newProfileResponse(us service.Service, userID uint, u *model.User) *profileResponse {
 	r := new(profileResponse)
 	r.Profile.Username = u.Username
 	r.Profile.Bio = u.Bio
